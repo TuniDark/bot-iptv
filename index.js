@@ -46,5 +46,5 @@ client.on('messageCreate', async (message) => {
   if (cmd === '/packages') await packages(message);
   if (cmd === '/templates') await templates(message);
 });
-
+console.log('Token reçu:', process.env.DISCORD_TOKEN ? 'OK longueur=' + process.env.DISCORD_TOKEN.length : 'VIDE');
 client.login(process.env.DISCORD_TOKEN);
