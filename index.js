@@ -1,4 +1,4 @@
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 const { Client, GatewayIntentBits } = require('discord.js');
 const generer = require('./commands/generer');
 const profil = require('./commands/profil');
